@@ -1,0 +1,15 @@
+# XL Driver Demo - 依赖包列表
+# 项目使用PySide6构建GUI界面，通过ctypes调用Vector硬件驱动程序
+
+# GUI框架
+PySide6==6.10.0
+
+# PySide6附加组件
+PySide6_Addons==6.10.0
+PySide6_Essentials==6.10.0
+
+# PySide6核心库
+shiboken6==6.10.0
+
+# 注意：ctypes是Python标准库，无需单独安装
+# Vector硬件驱动程序(vxlapi64.dll)已包含在项目中

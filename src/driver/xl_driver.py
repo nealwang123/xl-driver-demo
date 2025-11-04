@@ -18,8 +18,8 @@ class XLDriver(QObject):
         super().__init__()
         
         self.DLL_PATH = "src/driver/dll/vxlapi64.dll"
-        self.APP_NAME = "CANalyzer"
-        # 选择的 app 通道，Vector Hardware Manager 中配置，目前只能选择 app 的第一个通道 CAN1
+        self.APP_NAME = "CANoe"
+        # 选择的 app 通道，Vector Hardware Manager 中配置，使用虚拟通道 Virtual CAN Bus1
         self.APP_CHANNEL = 0
         self.BUS_TYPE = BusType.XL_BUS_TYPE_CAN.value
         # output params

@@ -130,7 +130,7 @@ class MyApp(QtWidgets.QMainWindow):
 
     def on_channel_selected(self, index):
         selected_channel = self.driver_config.channel[index]
-        self.log(f"Selected channel: {selected_channel.name.decode("utf-8")}")
+        self.log(f"Selected channel: {selected_channel.name.decode('utf-8')}")
         self.log(f"Selected hwtype: {selected_channel.hwType}")
         self.log(f"Selected hwindex: {selected_channel.hwIndex}")
         self.log(f"Selected hwchannel: {selected_channel.hwChannel}")
